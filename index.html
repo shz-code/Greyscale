@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="author" content="Shahidul_Alam" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreyScale</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    <link href="css/utils.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation Start -->
+    <header>
+        <nav id="nav">
+            <div class="container row justify-spaceBetween align-center">
+                <div id="nav__logo">GS</div>
+                <div class="nav__itemDiv">
+                    <ul class="" id="nav__ul">
+                        <li><a class="nav_link" href="#master">Home</a></li>
+                        <li><a class="nav_link" href="#about">About</a></li>
+                        <li><a class="nav_link" href="#portfolio">Projects</a></li>
+                        <li><a class="nav_link" href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="hamburger" onclick="navTog()">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation End -->
+    <!-- Master Start  -->
+    <section class="section row align-center justify-center" id="master">
+        <div class="container">
+            <div class="row justify-center">
+                <div class="text-center">
+                    <h1 class="text-uppercase master__h1">Grayscale</h1>
+                    <h2 class="master__h2">An Api to fill your book sypremacy in <span
+                            class="text-uppercase">Grayscale</span></h2>
+                    <a class="btn btn-primary" href="#about">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Master End  -->
+    <!-- About Start -->
+    <section class="section row justify-center text-center" id="about">
+        <div class="container" style="display: flex; flex-direction: column; justify-content: flex-end; height: 80vh;">
+            <div class="row justify-center">
+                <div class="about__container">
+                    <h2 class="">Built with 💗</h2>
+                    <p class="">
+                        Grayscale is a concept landing page. Completely responsive with custom client side email validation.
+                    </p>
+                </div>
+            </div>
+            <div class="about__img">
+                <img src="./assets/img/ipad.png" alt="..." />
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <section class="section" id="portfolio">
+        <div>
+            <div class="container">
+                <div class="row portfolio__part1">
+                    <div class="porfolio__img">
+                        <img src="./assets/img/bg-masthead.jpg" alt="">
+                        <span></span>
+                    </div>
+                    <div class="portfolio__content row justify-center align-center">
+                        <h3>Shortline</h3>
+                        <p>Grayscale is inspired completely custm coded responsive project.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio__part2">
+                    <div class="portfolio__part2__div">
+                        <div class="portfolio__part2__img">
+                            <img src="./assets/img/demo-image-01.jpg" alt="">
+                        </div>
+                        <div class="portfolio__part2__contant row justify-center align-center">
+                            <h3>Misty</h3>
+                            <p>An example of where you can put an image of a project, or anything else, along with a
+                                description.</p>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="portfolio__part2__div">
+                        <div class="portfolio__part2__contant responsive row justify-center align-center">
+                            <h3>Mountains</h3>
+                            <p>Another example of a project with its respective description. These sections work well
+                                responsively as well, try this theme on a small screen!</p>
+                        </div>
+                        <div class="portfolio__part2__img">
+                            <img src="./assets/img/demo-image-02.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Start-->
+    <section class="section" id="signup">
+        <div class="signup__content container">
+            <div class="signup__newsletter">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="">Subscribe to receive updates!</h2>
+            </div>
+            <div class="sigup__form">
+                <form id="contactForm">
+                    <div class="row align-center">
+                        <input class="" id="newsletter_input" on type="email" placeholder="Enter Your Email Here....">
+                        <button class="btn btn-primary disabled" type="submit" id="submitButton">
+                            Notify Me!
+                        </button>
+                    </div>
+                    <div class="validation text-center" style="color:white;padding-top: 20px; ; display: none;">
+                        <h1>Successfully Done!</h1>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Signup End-->
+    <!-- Contact Start-->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4 class="">Address</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h5>4923 Market Street, Orlando FL</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-envelope"></i>
+                        <h4 class="">email</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <a href="mailto:a@a.com">hello@yourdomain.com</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4 class="">phone</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <a href="tel:0123456789">0123456789</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social row justify-center align-center">
+                <a href="#!"><i class="fab fa-twitter"></i></a>
+                <a href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a href="#!"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container copyright row justify-center align-center">&copy;GreyScale; Developed By &nbsp;<span>Shahidul Alam</span></div>
+    </footer>
+
+    <!-- Contact End-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
